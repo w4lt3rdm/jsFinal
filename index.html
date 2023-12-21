@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+     <h1>POKEMONS</h1>
+<br>
+        <br>
+<div>
+		<div class="accordionItem">
+			<h2 class="accordionTitle">VER TODOS</h2>
+			<div class="accordionContent">
+				<div class="container-card" id="pokemons-list">
+    <!-- Donde se van a ir pintando o ingresando los pokemones que nos traigamos de la API -->
+  </div>
+
+  <div id="links" class="link">
+    <!-- aca se insertara el contenido de todos los pokemon -->
+  </div>
+			</div>
+      <br>
+		</div>
+
+		<div class="accordionItem">
+			<h2 class="accordionTitle">VER INFO</h2>
+			<div class="accordionContent">
+<br>
+        <br>
+        <input type="text" id="pokeInfo" class="form-control" placeholder="Introduce un Pokemon">
+<button type="button" onclick="obtenerPokemon()" class="btn btn-outline-dark">Buscar</button>
+<br>
+<br>
+        <br>
+        <br>
+				<div id="divInfo">
+          <!-- aca se insertara la info del pokemon buscado -->
+        </div>
+        </div>
+			</div>
+      <br>
+		</div>
+
+		<div class="accordionItem">
+			<h2 class="accordionTitle">VER IMAGEN</h2>
+			<div class="accordionContent">
+        <br>
+        <br>
+				<input type="text" id="pokemon" class="form-control" placeholder="Introduce un Pokemon">
+<button type="button" onclick="mostrarFoto()" class="btn btn-outline-dark">Buscar</button>
+<br>
+<br>
+<div id="img">
+  <!-- aca se insertara las imagenes del pokemon buscado -->
+</div>
+        </div>
+			</div>
+      <br>
+		</div>
+	</div>  
+ <script src="./index.js"></script>
+  </body>
+</html>
